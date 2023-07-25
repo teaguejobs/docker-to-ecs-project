@@ -10,7 +10,9 @@
     * sudo yum update
     * sudo yum install docker -y
     * sudo systemctl start docker
-    * sudo usermod -aG docker ec2-user
+    * sudo service docker start
+    * sudo systemctl enable docker
+    * sudo usermod -a -G docker ec2-user
     * exit (exit from server and ssh again)
 6. Create a private ECR repository on the AWS console with any name (like node-react-app)
 7. configure your AWS credentials using  the export commands or the aws configure command:
